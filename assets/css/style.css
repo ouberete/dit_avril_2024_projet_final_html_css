@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Variables globales*/
+:root{
+    --primary-color: #663a07;
+    --secondary-color: #199717;
+    --third-color: #f5f5f5;
+    --overlay-color: rgba(0,0,0,0.7);
+    --menu-speed: 0.75s;
+    --primary-link-color: #f5f5f5;
+    --secondary-link-color: #000000;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    height: 100%;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-container{
+    background-color: #999;
+    position: relative;
+    height: 100%;
+}
+
+nav{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+nav .container{
+    color: #fff;
+    display: grid;
+    grid-template-columns: 3fr 6fr 1.5fr;
+    align-items: center;
+}
+
+nav .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+}
+nav .search{
+    background-color: #fff;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 1.2rem;
+}
+
+nav .search input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 1rem;
+    color: #333;
+
+}
+nav .container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+ nav .container ul li a{
+    text-decoration: none;
+    color: var(--primary-link-color);
+    margin-left: 1.2rem;
+    padding: .5rem .5rem;
+}
+
+nav .logo a:hover, nav .container ul li a:hover{
+    text-decoration: underline;
+    background-color: var(--primary-link-color) !important;
+    text-decoration: none;
+    color: var(--secondary-link-color) !important;
+}
+
+nav .logo a.active, nav .container ul li a.active{
+    text-decoration: underline;
+    background-color: var(--secondary-link-color) !important;
+    text-decoration: none;
+    color: var(--primary-link-color) !important;
+}
+
+header{
+    background-image: url(../images/header1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: #fff;
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header{ 
+        padding-top: 5rem;
+    }
+
+    .logo-mobile{
+        display: block !important;
+        margin-right: 1rem;
+        font-size: 11px;
+    }
+    nav .container ul li a, nav .search input{
+        font-size: 12px;
+    }
+    nav .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 3fr .5fr;
+        align-items: center !important;
+    }
+
+    
+    .logo-high{
+        display: none !important;
+    }
+   
+    
+}
+
+header .container h1{
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+
+header .container a{   
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 1.2rem;
+}
+
+header .container a:hover{
+    text-decoration: underline;
+    background-color: black;
+    text-decoration: none;
+}
+
+header .container p{
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.main{
+    margin-top: 2rem;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    align-items: center;
+    margin-top: 20px;
+}
+footer .container{
+    color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: left;
+}
+footer .container .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer .container .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+footer .container .description .logo a{
+    
+    text-decoration: none;
+    color: var(--secondary-link-color);
+}
+
+footer .container .useful-links ul{
+    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+footer .container ul li a{ 
+    text-decoration: none;
+    color: black;
+    margin: .5rem .5rem;
+    text-decoration: underline;
+   
+}
+
+footer .container ul li a:hover{
+    text-decoration: underline;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+footer .copyright{
+    font-size: .8rem;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 1rem ;
+}
+
+    

@@ -1,0 +1,62 @@
+.cart-page{
+    margin-top: 0;
+    padding-top: 5rem;
+}
+
+#table-container{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    padding: 2rem;
+    min-width: 300px;
+    overflow: scroll;
+    box-sizing: border-box;
+}
+
+table{
+    width: 100%;
+}
+table th{
+    text-align: left;
+    padding: 1rem 2rem;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+table thead tr th, .cart-table tbody tr td, table tfoot tr td{
+    padding: 1rem 2rem;
+    border: 1px solid #992;
+}
+
+table tfoot tr td{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+table tbody tr td img{
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+}
+
+.action{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-left: 20rem;
+}
+
+.action a{
+    text-decoration: none;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.continue-shop{
+    background-color: #333;
+}
+.checkout{
+    background-color: #992;
+}
