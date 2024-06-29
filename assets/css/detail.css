@@ -48,6 +48,13 @@
     font-weight: bold;
 }
 
+ .action a:hover{
+    text-decoration: underline;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: white;
+}
+
 .quantity input{
     width: 40%;
     height: 100%;
